@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JS - BAŞKA JS DOSYASINA SAYFAYA DAHİL ETME -->
+    <!-- <script src="script.js"></script> -->
+    
+    <title>BahadirS</title>
+    <style>
+         .header{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 18px;
+            background: blue;
+         }   
+        .container{
+            text-align: center;
+            font-size: 30px;
+         }
+    </style>
+</head>
+<body>
+    <div class="header">
+
+        <h1>Basic JavaScript</h1>
+
+    </div>
+
+<hr>
+
+<div class="container">
+
+    <!-- JS - TIKLA Onclick -->
+    <!-- <button onclick="tikla()"> TIKLA </button> -->
+
+    <!-- JS - TIKLAYINCA İSİM DEĞİŞTİRME -->
+    <!-- <button onclick="tikla(this)">DEĞİŞTİR</button> -->
+
+
+    <!-- JS - TIKLAYINCA RENK DEĞİŞTİRME -->
+    <!-- <p id="renkDegistir">RENK DEĞİŞTİRME</p>
+    <button onclick="renkDegistir(this)">DEĞİŞTİR</button> -->
+
+    <!-- JS - BUTTON -->
+    <!-- <form name="form1" action="gonder.php" method="GET" onsubmit="return dogrula()">
+        <input type="text" name="isim">
+        <button type="submit"> GÖNDER </button>
+    </form> -->
+
+    <!-- EKRANA 1 den 10 a KADAR YAZDIRMA -->
+    <!-- <p id="ekranaBas"></p> -->
+
+
+    <p id="ekranaYaz"></p>
+
+</div> 
+
+<script>
+
+    
+    //JS - EKRANA 10 SEFER HOŞGELDİN YAZDIRMA
+    for (var i=0; i < 10; i++ ){
+    document.getElementById("ekranaYaz").innerHTML += "HOŞ GELDİN..." + "<br>" ;   
+    }
+  
+
+    //JS - UYARI KOMUTLARI
+    // alert("bahadir"); 
+
+
+    //JS - DEĞİŞKEN TANIMLAMA
+    // var sayi1 = 10;
+    // var sayi2 = 10;
+    // var sayi3 = 10;
+    // alert("Sayıların Toplamı: " + (sayi1+sayi2+sayi3));    
+
+    //JS - FOR DÖNGÜSÜ KOMUTLARI
+    //     for (var i=0; i < 10; i++ ){
+    //        console.log("i değeri : " + i )
+    //     }
+ 
+
+    //JS - WHİLE DÖNGÜSÜ KOMUTLARI
+    // var i = 0;
+    // while (i < 100){
+    //     console.log("i değeri : " + i);
+    //     i +=2;
+    // }    
+
+   
+    //JS - DİZİ KOMUTLARI
+    //var array = ["PHP","React","HTML"];
+    //alert(array[0]);
+    //Diziye eleman ekleme
+    //array.push("CSS");
+    //alert(array[3]);
+
+
+    //JS - DİZİLERİ BASTIRMA
+    // var sayilar = [32, 5, 1, 100, -1, 90];
+    // console.log("Dizi Elemanları...");
+    // for (var i = 0 ; i < sayilar.length ; i++){
+    //     console.log("Eleman : " + sayilar[i]);
+    // }
+
+
+    //JS - DİZİLERİ FOREACH DÖNGÜSÜ İLE BASTIRMA
+    // var sayilar = [32, 5, 1, 100, -1, 555];
+    // console.log("Dizi Elemanları...");  
+    // sayilar.forEach(function(sayi){
+    //     console.log("Eleman : " + sayi);
+    // });
+    //if if else else
+    // var islem = 2;    
+    // if (islem == 1){
+    //     console.log("İşlem 1");
+    // }
+    // else if (islem == 2){
+    //     console.log("İşlem 2");
+    // }
+    // else if (islem == 3){
+    //     console.log("İşlem 3");
+    // }
+    // else {
+    //     console.log("İşlem Yanlış");
+    // }
+
+
+    //JS - SWİTCH CASE KOMUTLARI
+    // var islem = 2;
+    // switch(islem){
+    //     case 1:
+    //         console.log("islem 1");
+    //         break;
+    //     case 2: 
+    //         console.log("islem 2");
+    //         break;    
+    //     case 3:
+    //         console.log("islem 3");
+    //         break;
+    //     default:
+    //         console.log("Geçersiz İşlem...");
+    // }
+
+
+    //JS - FUNCTION
+    // function selamla(){
+    //     console.log("Merhaba Selamlar");
+    // }
+    // selamla();
+
+
+    //JS - FUNCTIONLA İLE İSİM YOLLAMA
+    // function selamla(isim){
+    //     console.log("Merhaba " + isim);
+    // }
+    // selamla('Bahadır');
+    // selamla('Çalışkan');
+
+
+    //JS - FUNCITON İLE TOPLAMA
+    //  function toplama(a,b,c){
+    //     console.log("Toplam Değer " +(a+b+c));
+    //  }
+    //   toplama(8,4,5);
+
+
+    //JS - RETURN
+    // function toplama(a,b,c){
+    //         return a+b+c;
+    // }
+    // toplama(3,4,5);
+    // var toplam = toplama(3,4,5);
+    // console.log("Return Toplamları "+ toplam);
+
+
+    // JS - OBJECT
+    // var calisan = {
+    //     isim: "Bahadır",
+    //     soyisim : "Çalışkan",
+    //     diller : { 
+    //         dil1: "PHP", 
+    //         dil2: "JS",
+    //         dil3: "NodeJS",
+    //         dil4: "ReactJS"
+    //     }
+    // };
+    // console.log(calisan.isim);
+    // console.log(calisan.soyisim);
+    // console.log(calisan.diller.dil1);
+    // console.log(calisan.diller.dil2);
+
+
+    //JS - OBJECT VE FUNCTION
+    // var calisan = {
+    //     isim: "Bahadır",
+    //     soyisim : "Çalışkan",
+    //     diller : ["PHP", "JS", "NodeJS", "ReactJS"],
+    //     bilgiler : function(){
+    //         return "isim: "+ this.isim + " soyisim: "+ this.soyisim;
+    //     }
+    // };
+    // console.log(calisan.isim);
+    // console.log(calisan.soyisim);
+    // console.log(calisan.bilgiler());
+
+
+    //JS - FUNCTION İLE DĞİŞKEN GÖNDERME
+    // function Calisanlar(isim,soyisim,numara){
+    //     this.isim = isim;
+    //     this.soyisim = soyisim;
+    //     this.numara = numara;
+    //     this.goster = function(){
+    //         return "isim: "+ this.isim + "\nsoyisim: " + this.soyisim + "\nnumara: " + this.numara;
+    //     }
+    // }
+    // var Calisan1 = new Calisanlar("Bahadır", "Çalışkan", "147258");
+    // var calisan2 = new Calisanlar("Ali", "Çalışkan", "369258");
+    // console.log(Calisan1.goster());
+    // console.log(calisan2.goster());
+
+
+    //JS - TIKLA KOMUTLARI   
+    // function tikla(){
+    //     alert("BUTONA TIKLADIN NABER")
+    // } 
+
+
+    //JS - TIKLAYINCA İSİM DEĞİŞTİRME KOMUTLARI
+    // function tikla(element){
+    //     element.innerHTML = "BUTONA TIKLADIN VE DEĞİŞTİ NABER";
+    // }
+    
+
+    //JS - TIKLAYINCA RENK DEĞİŞTİRME KOMUTLARI
+    // function renkDegistir(){
+    //     var element = document.getElementById("renkDegistir");
+    //     element.style.color = "red";
+    // }
+
+
+    //JS - BUTTON KOMUTLARI
+    // function dogrula(){
+    //     var form = document.forms["form1"];
+    //     var deger = form["isim"].value;
+    //     if (deger == ""){
+    //         alert("Text Kutusu Boş Bırakılamaz.");
+    //         return false;
+    //     }
+    //     return true;
+    // }
+
+ 
+    //JS - EKRANA 1 den 10 a KADAR YAZDIRMA
+    // for (var i=0; i < 10; i++ ){
+    // document.getElementById("ekranaBas").innerHTML += "i değer :" + i +"<br>" ;   
+    // }
+
+   
+
+</script>
+
+</body>
+</html>
